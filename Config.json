@@ -4,7 +4,7 @@
     "Initial gene A percent": 0.1,
     "Initial distribution radius" : 20,
     "Initial population size" : 10,
-    "Life span" : 20,
+    "Lifespan" : 20,
     "Map X" : 50,
     "Map Y" : 50,
     "Mating radius" : 3,
