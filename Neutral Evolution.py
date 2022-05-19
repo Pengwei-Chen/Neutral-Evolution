@@ -76,7 +76,7 @@ def generate_age(life_span, death_rate):
 def initialize(config):
     population = []
     for i in range(config["Initial population size"]):
-        age = generate_age(config["Life span"], config["Death rate"])
+        age = generate_age(config["Lifespan"], config["Death rate"])
         location_shift = (random.randint(-config["Initial distribution radius"], config["Initial distribution radius"]),
                             random.randint(-config["Initial distribution radius"], config["Initial distribution radius"]))
         while calculate_distance(location_shift, (0, 0)) > config["Initial distribution radius"]:
@@ -87,7 +87,7 @@ def initialize(config):
                             death_rate = config["Death rate"],
                             gender = random.randint(0, 1),
                             genotype = (random.random() < config["Initial gene A percent"], random.random() < config["Initial gene A percent"]),
-                            lifespan = config["Life span"],
+                            lifespan = config["Lifespan"],
                             location = (int(config["Map X"] / 2) + location_shift[0], int(config["Map Y"] / 2) + location_shift[1]),
                             map_size = (config["Map X"], config["Map Y"]),
                             mated = age % config["Child-bearing age"],
@@ -123,7 +123,7 @@ def develop(population, config):
                             death_rate = config["Death rate"],
                             gender = random.randint(0, 1),
                             genotype = (population[i].genotype[random.randint(0, 1)], population[distance[0][0]].genotype[random.randint(0, 1)]),
-                            lifespan = config["Life span"],
+                            lifespan = config["Lifespan"],
                             location = (int((population[i].location[0] + population[distance[0][0]].location[0]) / 2), 
                                             int((population[i].location[1] + population[distance[0][0]].location[1]) / 2)),
                             map_size = (config["Map X"], config["Map Y"]),
