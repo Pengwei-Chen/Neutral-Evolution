@@ -1,0 +1,15 @@
+{
+    "Child-bearing age" : 5,
+    "Death rate" : 0.01,
+    "Initial gene A percent": 0.1,
+    "Initial distribution radius" : 20,
+    "Initial population size" : 10,
+    "Life span" : 20,
+    "Map X" : 50,
+    "Map Y" : 50,
+    "Mating radius" : 3,
+    "Mobility" : 1,
+    "Mutation rate" : 0,
+    "Reproductive cycle" : 3,
+    "Time scale" : 100000
+}
